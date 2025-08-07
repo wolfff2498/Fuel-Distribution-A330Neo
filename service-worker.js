@@ -1,13 +1,13 @@
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('v1').then(function(cache) {
+        caches.open('fuelcalc-cache').then(function(cache) {
             return cache.addAll([
-                './',
-                './A330Neo Fuel Distribution Calculator 1.html',
-                './manifest.json',
-                './icons/icon-192.png',
-                './icons/icon-512.png'
+                '/',
+                '/index.html',
+                '/manifest.json',
+                '/icon-192.png',
+                '/icon-512.png'
             ]);
         })
     );
