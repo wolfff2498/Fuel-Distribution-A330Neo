@@ -8,7 +8,6 @@ self.addEventListener('install', function(event) {
         '/service-worker.js',
         '/icon-192.png',
         '/icon-512.png'
-        // Add other assets here if needed (e.g., CSS, JS)
       ]);
     })
   );
